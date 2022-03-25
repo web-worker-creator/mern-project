@@ -1,0 +1,33 @@
+{
+  "name": "mern-course",
+  "version": "1.0.0",
+  "description": "mern stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Andry Zhabin <andryzhabin@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.7",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "firebase": "^9.6.9",
+    "jsonwebtoken": "^8.5.1",
+    "materialize-css": "^1.0.0-rc.2",
+    "mongoose": "^6.2.6",
+    "tar": "^6.1.11"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
